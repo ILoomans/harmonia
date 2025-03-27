@@ -13,7 +13,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.20",
+  solidity: "0.8.28",
   optimizer: {enabled: true},
   networks: {
     hardhat: {
@@ -26,6 +26,12 @@ module.exports = {
       // },
       chainId: 1337,
     },
+    monad: {
+      solidity: "0.8.28",
+          url: "https://testnet-rpc.monad.xyz",
+          accounts: ['0x49a2d7fb326a0a00d37f18cfaa41167578aabda9178b774d4601e8d70be9ae3a'],
+          chainId: 10143
+    }
   },
   paths: {
     sources: "./src",

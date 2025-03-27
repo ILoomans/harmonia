@@ -18,7 +18,7 @@
 
 pragma solidity ^0.8.28;
 
-import "openzeppelin/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract TestToken is ERC20 {
     uint256 constant _initial_supply = 1000000;
